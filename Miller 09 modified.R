@@ -48,7 +48,7 @@ print(summary(first.rules))  # yields 69,921 rules... too many
 
 # select association rules using thresholds for support and confidence 
 second.rules <- apriori(groceries, 
-                        parameter = list(support = 0.025, confidence = 0.05))
+                        parameter = list(support = 0.0343, confidence = 0.05))
 print(summary(second.rules))  # yields 344 rules
 
 # data visualization of association rules in scatter plot
