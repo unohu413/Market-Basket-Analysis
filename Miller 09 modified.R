@@ -46,7 +46,7 @@ dev.off()
 # select association rules using thresholds for support and confidence
 second.rules <- apriori(groceries,
                         parameter = list(support = 0.0343, confidence = 0.05))
-print(summary(second.rules))  # yields 344 rules
+print(summary(second.rules))  # yields 201 rules
 
 # data visualization of association rules in scatter plot
 pdf(file="fig_market_basket_rules.pdf", width = 8.5, height = 8.5)
